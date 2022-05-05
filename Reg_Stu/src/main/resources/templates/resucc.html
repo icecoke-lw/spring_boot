@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>注册成功</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <h3>注册成功</h3>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>学号</th>
+            <th>姓名</th>
+            <th>专业</th>
+            <th>地址</th>
+            <th>年龄</th>
+            <th>IP地址</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td th:text="${stu.no}"></td>
+            <td th:text="${stu.name}"></td>
+            <td th:text="${stu.major}"></td>
+            <td th:text="${stu.address}"></td>
+            <td th:text="${stu.age}"></td>
+            <td th:text="${ip}"></td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+</body>
+</html>

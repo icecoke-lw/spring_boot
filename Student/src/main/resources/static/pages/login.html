@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="../plugins/elementui/index.css" />
+
+    <link
+            rel="stylesheet"
+            href="../plugins/font-awesome/css/font-awesome.min.css"
+    />
+</head>
+<body>
+<div id="app">
+
+    <el-form style="width: 400px;
+        height: 300px;
+        margin: 0px auto;
+        margin-top:100px
+        box-shadow: 0px 0px 10px 1px;
+        padding: 20px;
+        border-radius: 5px;
+        background-color: #fff;
+        border:1px solid #c0c0c0
+      "
+            label-width="100px"
+    >
+        <center style="margin-bottom: 40px"><h1>LOGIN</h1></center>
+        <el-form-item label="用户名" style="">
+            <el-input
+                    type="text"
+                    style="margin-bottom: 10px; width: 260px"
+                    v-model.trim="dataList.username"
+                    prop="username"
+            ></el-input>
+        </el-form-item>
+        <el-form-item label="密码">
+            <el-input
+                    type="password"
+                    style="margin-bottom: 10px; width: 260px"
+                    v-model.trim="dataList.password"
+            ></el-input>
+        </el-form-item>
+
+        <el-button
+                style="width: 310px; margin-left: 53px"
+                type="primary"
+                @click=""
+        >登录</el-button
+        >
+    </el-form>
+</div>
+<!-- 引入组件库 -->
+
+<script src="../js/vue.js"></script>
+
+<!-- 引入组件库 -->
+<script src="../plugins/elementui/index.js"></script>
+
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+
+<script src="../js/axios-0.18.0.js"></script>
+<script>
+    new Vue({
+        el:'#app',
+        data:{
+            username:'',
+            password:'',
+        },
+        methods: {
+            login()
+            {
+
+            }
+            ,
+        }
+    });
+
+
+
+
+</script>
+</body>
+</html>
